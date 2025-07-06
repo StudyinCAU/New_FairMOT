@@ -1,5 +1,0 @@
-2025-06-30-04-44: epoch: 6 |loss 4.023482 | hm_loss 0.499168 | wh_loss 0.554057 | off_loss 0.179910 | id_loss 6.458753 | time 312.800000 | 
-2025-06-30-09-57: epoch: 7 |loss 1.410635 | hm_loss 0.482046 | wh_loss 0.538236 | off_loss 0.178564 | id_loss 3.197790 | time 312.666667 | 
-2025-06-30-15-09: epoch: 8 |loss 1.244077 | hm_loss 0.441513 | wh_loss 0.495844 | off_loss 0.174110 | id_loss 2.441886 | time 312.750000 | 
-2025-06-30-20-23: epoch: 9 |loss 1.214457 | hm_loss 0.429067 | wh_loss 0.486118 | off_loss 0.172990 | id_loss 2.357689 | time 313.250000 | 
-2025-07-01-01-36: epoch: 10 |loss 1.193811 | hm_loss 0.420444 | wh_loss 0.480335 | off_loss 0.172375 | id_loss 2.296789 | time 313.066667 | 

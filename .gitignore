@@ -1,3 +1,5 @@
 .idea
 dataset/bdd100kmot_vehicle/
 outputs/
+*.pth
+exp/
