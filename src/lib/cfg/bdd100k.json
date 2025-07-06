@@ -1,0 +1,12 @@
+{
+    "root": "/home/station1/weidongtang/report/work2/FairMOT/dataset",
+    "train": {
+        "bdd100kmot_vehicle": "./data/bdd100kmot_vehicle.train"
+    },
+    "test_emb": {
+        "bdd100kmot_vehicle": "./data/bdd100kmot_vehicle.val"
+    },
+    "test": {
+        "bdd100kmot_vehicle": "./data/bdd100kmot_vehicle.val"
+    }
+}

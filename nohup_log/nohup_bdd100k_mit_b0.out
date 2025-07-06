@@ -1,0 +1,104 @@
+Using tensorboardX
+Fix size testing.
+training chunk_sizes: [8]
+The output will be saved to  /home/station1/weidongtang/report/work2/FairMOT/src/lib/../../exp/mot/bdd100k_mit_b0
+Setting up data...
+================================================================================
+dataset summary
+OrderedDict([('bdd100kmot_vehicle', 88793.0)])
+total # identities: 88794
+start index
+OrderedDict([('bdd100kmot_vehicle', 0)])
+================================================================================
+heads {'hm': 1, 'wh': 4, 'id': 128, 'reg': 2}
+Namespace(K=500, arch='mit_0', batch_size=8, cat_spec_wh=False, chunk_sizes=[8], conf_thres=0.4, data_cfg='../src/lib/cfg/bdd100k.json', data_dir='/home/station1/weidongtang/report/work2/FairMOT/dataset', dataset='jde', debug_dir='/home/station1/weidongtang/report/work2/FairMOT/src/lib/../../exp/mot/bdd100k_mit_b0/debug', dense_wh=False, det_thres=0.3, down_ratio=4, exp_dir='/home/station1/weidongtang/report/work2/FairMOT/src/lib/../../exp/mot', exp_id='bdd100k_mit_b0', fix_res=True, gpus=[0], gpus_str='0', head_conv=256, heads={'hm': 1, 'wh': 4, 'id': 128, 'reg': 2}, hide_data_time=False, hm_weight=1, id_loss='ce', id_weight=1, img_size=(1088, 608), input_h=1088, input_res=1088, input_video='../videos/MOT16-03.mp4', input_w=608, keep_res=False, load_model='', lr=0.0001, lr_step=[7, 9], ltrb=True, master_batch_size=8, mean=None, metric='loss', min_box_area=100, mse_loss=False, multi_loss='uncertainty', nID=88794, nms_thres=0.4, norm_wh=False, not_cuda_benchmark=False, not_prefetch_test=False, not_reg_offset=False, num_classes=1, num_epochs=2, num_iters=-1, num_stacks=1, num_workers=16, off_weight=1, output_format='video', output_h=272, output_res=272, output_root='../demos', output_w=152, pad=31, print_iter=100, reg_loss='l1', reg_offset=True, reid_dim=128, resume=False, root_dir='/home/station1/weidongtang/report/work2/FairMOT/src/lib/../..', save_all=False, save_dir='/home/station1/weidongtang/report/work2/FairMOT/src/lib/../../exp/mot/bdd100k_mit_b0', seed=3047, std=None, task='mot', test=False, test_hie=False, test_mot15=False, test_mot16=False, test_mot17=False, test_mot20=False, track_buffer=30, trainval=False, val_hie=False, val_intervals=1, val_mot15=False, val_mot16=False, val_mot17=True, val_mot20=False, vis_thresh=0.5, wh_weight=0.1)
+Creating model...
+Starting training...
+mot/bdd100k_mit_b0| train: [1][0/34172]|Tot: 0:00:50 |ETA: 0:00:00 |loss 60.1352 |hm_loss 12.9085 |wh_loss 7.0843 |off_loss 0.5090 |id_loss 11.6643 |Data 1.613s(1.613s) |Net 50.439s
+mot/bdd100k_mit_b0| train: [1][100/34172]|Tot: 0:01:59 |ETA: 0:00:00 |loss 28.0424 |hm_loss 3.2546 |wh_loss 5.5161 |off_loss 0.2672 |id_loss 11.6663 |Data 0.003s(0.019s) |Net 1.181s
+mot/bdd100k_mit_b0| train: [1][200/34172]|Tot: 0:03:08 |ETA: 0:00:00 |loss 27.0775 |hm_loss 3.0279 |wh_loss 5.4537 |off_loss 0.2606 |id_loss 11.6108 |Data 0.003s(0.011s) |Net 0.937s
+mot/bdd100k_mit_b0| train: [1][300/34172]|Tot: 0:04:17 |ETA: 0:00:00 |loss 26.3442 |hm_loss 2.8762 |wh_loss 5.2372 |off_loss 0.2583 |id_loss 11.5701 |Data 0.003s(0.008s) |Net 0.855s
+mot/bdd100k_mit_b0| train: [1][400/34172]|Tot: 0:05:26 |ETA: 0:00:00 |loss 25.7692 |hm_loss 2.7647 |wh_loss 5.0896 |off_loss 0.2571 |id_loss 11.5298 |Data 0.003s(0.007s) |Net 0.814s
+mot/bdd100k_mit_b0| train: [1][500/34172]|Tot: 0:06:35 |ETA: 0:00:00 |loss 25.2730 |hm_loss 2.6756 |wh_loss 4.8822 |off_loss 0.2557 |id_loss 11.5059 |Data 0.003s(0.006s) |Net 0.789s
+mot/bdd100k_mit_b0| train: [1][600/34172]|Tot: 0:07:44 |ETA: 0:00:00 |loss 24.8770 |hm_loss 2.6082 |wh_loss 4.6996 |off_loss 0.2546 |id_loss 11.4966 |Data 0.003s(0.006s) |Net 0.773s
+mot/bdd100k_mit_b0| train: [1][700/34172]|Tot: 0:08:53 |ETA: 0:00:00 |loss 24.5271 |hm_loss 2.5506 |wh_loss 4.5731 |off_loss 0.2535 |id_loss 11.4838 |Data 0.003s(0.005s) |Net 0.761s
+mot/bdd100k_mit_b0| train: [1][800/34172]|Tot: 0:10:02 |ETA: 0:00:00 |loss 24.2190 |hm_loss 2.5055 |wh_loss 4.4541 |off_loss 0.2533 |id_loss 11.4677 |Data 0.003s(0.005s) |Net 0.752s
+mot/bdd100k_mit_b0| train: [1][900/34172]|Tot: 0:11:11 |ETA: 0:00:00 |loss 23.9265 |hm_loss 2.4607 |wh_loss 4.3390 |off_loss 0.2527 |id_loss 11.4601 |Data 0.003s(0.005s) |Net 0.745s
+mot/bdd100k_mit_b0| train: [1][1000/34172]|Tot: 0:12:20 |ETA: 0:00:00 |loss 23.6481 |hm_loss 2.4181 |wh_loss 4.2302 |off_loss 0.2523 |id_loss 11.4542 |Data 0.003s(0.005s) |Net 0.740s
+mot/bdd100k_mit_b0| train: [1][1100/34172]|Tot: 0:13:29 |ETA: 0:00:00 |loss 23.3859 |hm_loss 2.3795 |wh_loss 4.1322 |off_loss 0.2520 |id_loss 11.4467 |Data 0.003s(0.005s) |Net 0.735s
+mot/bdd100k_mit_b0| train: [1][1200/34172]|Tot: 0:14:38 |ETA: 0:00:00 |loss 23.1524 |hm_loss 2.3463 |wh_loss 4.0491 |off_loss 0.2517 |id_loss 11.4439 |Data 0.003s(0.004s) |Net 0.732s
+mot/bdd100k_mit_b0| train: [1][1300/34172]|Tot: 0:15:47 |ETA: 0:00:00 |loss 22.9228 |hm_loss 2.3153 |wh_loss 3.9672 |off_loss 0.2512 |id_loss 11.4375 |Data 0.003s(0.004s) |Net 0.728s
+mot/bdd100k_mit_b0| train: [1][1400/34172]|Tot: 0:16:56 |ETA: 0:00:00 |loss 22.7103 |hm_loss 2.2889 |wh_loss 3.8970 |off_loss 0.2510 |id_loss 11.4290 |Data 0.003s(0.004s) |Net 0.726s
+mot/bdd100k_mit_b0| train: [1][1500/34172]|Tot: 0:18:05 |ETA: 0:00:00 |loss 22.5066 |hm_loss 2.2654 |wh_loss 3.8393 |off_loss 0.2509 |id_loss 11.4165 |Data 0.003s(0.004s) |Net 0.723s
+mot/bdd100k_mit_b0| train: [1][1600/34172]|Tot: 0:19:14 |ETA: 0:00:00 |loss 22.3036 |hm_loss 2.2420 |wh_loss 3.7765 |off_loss 0.2506 |id_loss 11.4038 |Data 0.003s(0.004s) |Net 0.721s
+mot/bdd100k_mit_b0| train: [1][1700/34172]|Tot: 0:20:23 |ETA: 0:00:00 |loss 22.1113 |hm_loss 2.2208 |wh_loss 3.7183 |off_loss 0.2503 |id_loss 11.3923 |Data 0.003s(0.004s) |Net 0.719s
+mot/bdd100k_mit_b0| train: [1][1800/34172]|Tot: 0:21:32 |ETA: 0:00:00 |loss 21.9293 |hm_loss 2.2027 |wh_loss 3.6715 |off_loss 0.2501 |id_loss 11.3776 |Data 0.003s(0.004s) |Net 0.718s
+mot/bdd100k_mit_b0| train: [1][1900/34172]|Tot: 0:22:41 |ETA: 0:00:00 |loss 21.7450 |hm_loss 2.1837 |wh_loss 3.6204 |off_loss 0.2498 |id_loss 11.3631 |Data 0.003s(0.004s) |Net 0.716s
+mot/bdd100k_mit_b0| train: [1][2000/34172]|Tot: 0:23:50 |ETA: 0:00:00 |loss 21.5779 |hm_loss 2.1676 |wh_loss 3.5849 |off_loss 0.2497 |id_loss 11.3510 |Data 0.003s(0.004s) |Net 0.715s
+mot/bdd100k_mit_b0| train: [1][2100/34172]|Tot: 0:24:59 |ETA: 0:00:00 |loss 21.4086 |hm_loss 2.1517 |wh_loss 3.5451 |off_loss 0.2495 |id_loss 11.3361 |Data 0.003s(0.004s) |Net 0.714s
+mot/bdd100k_mit_b0| train: [1][2200/34172]|Tot: 0:26:09 |ETA: 0:00:00 |loss 21.2374 |hm_loss 2.1352 |wh_loss 3.5014 |off_loss 0.2492 |id_loss 11.3206 |Data 0.003s(0.004s) |Net 0.713s
+mot/bdd100k_mit_b0| train: [1][2300/34172]|Tot: 0:27:18 |ETA: 0:00:00 |loss 21.0719 |hm_loss 2.1203 |wh_loss 3.4602 |off_loss 0.2489 |id_loss 11.3044 |Data 0.003s(0.004s) |Net 0.712s
+mot/bdd100k_mit_b0| train: [1][2400/34172]|Tot: 0:28:27 |ETA: 0:00:00 |loss 20.9132 |hm_loss 2.1068 |wh_loss 3.4196 |off_loss 0.2488 |id_loss 11.2892 |Data 0.003s(0.004s) |Net 0.711s
+mot/bdd100k_mit_b0| train: [1][2500/34172]|Tot: 0:29:36 |ETA: 0:00:00 |loss 20.7511 |hm_loss 2.0918 |wh_loss 3.3793 |off_loss 0.2487 |id_loss 11.2729 |Data 0.003s(0.004s) |Net 0.710s
+mot/bdd100k_mit_b0| train: [1][2600/34172]|Tot: 0:30:45 |ETA: 0:00:00 |loss 20.5963 |hm_loss 2.0787 |wh_loss 3.3488 |off_loss 0.2485 |id_loss 11.2553 |Data 0.003s(0.004s) |Net 0.709s
+mot/bdd100k_mit_b0| train: [1][2700/34172]|Tot: 0:31:54 |ETA: 0:00:00 |loss 20.4495 |hm_loss 2.0673 |wh_loss 3.3193 |off_loss 0.2484 |id_loss 11.2392 |Data 0.003s(0.004s) |Net 0.709s
+mot/bdd100k_mit_b0| train: [1][2800/34172]|Tot: 0:33:03 |ETA: 0:00:00 |loss 20.2968 |hm_loss 2.0537 |wh_loss 3.2825 |off_loss 0.2483 |id_loss 11.2233 |Data 0.003s(0.004s) |Net 0.708s
+mot/bdd100k_mit_b0| train: [1][2900/34172]|Tot: 0:34:12 |ETA: 0:00:00 |loss 20.1473 |hm_loss 2.0411 |wh_loss 3.2501 |off_loss 0.2481 |id_loss 11.2060 |Data 0.003s(0.004s) |Net 0.707s
+mot/bdd100k_mit_b0| train: [1][3000/34172]|Tot: 0:35:21 |ETA: 0:00:00 |loss 20.0062 |hm_loss 2.0304 |wh_loss 3.2226 |off_loss 0.2479 |id_loss 11.1893 |Data 0.003s(0.004s) |Net 0.707s
+mot/bdd100k_mit_b0| train: [1][3100/34172]|Tot: 0:36:30 |ETA: 0:00:00 |loss 19.8679 |hm_loss 2.0199 |wh_loss 3.1973 |off_loss 0.2478 |id_loss 11.1735 |Data 0.003s(0.004s) |Net 0.706s
+mot/bdd100k_mit_b0| train: [1][3200/34172]|Tot: 0:37:39 |ETA: 0:00:00 |loss 19.7329 |hm_loss 2.0098 |wh_loss 3.1741 |off_loss 0.2476 |id_loss 11.1579 |Data 0.003s(0.004s) |Net 0.706s
+mot/bdd100k_mit_b0| train: [1][3300/34172]|Tot: 0:38:48 |ETA: 0:00:00 |loss 19.5975 |hm_loss 1.9995 |wh_loss 3.1478 |off_loss 0.2474 |id_loss 11.1421 |Data 0.003s(0.004s) |Net 0.705s
+mot/bdd100k_mit_b0| train: [1][3400/34172]|Tot: 0:39:57 |ETA: 0:00:00 |loss 19.4668 |hm_loss 1.9900 |wh_loss 3.1227 |off_loss 0.2472 |id_loss 11.1275 |Data 0.003s(0.004s) |Net 0.705s
+mot/bdd100k_mit_b0| train: [1][3500/34172]|Tot: 0:41:06 |ETA: 0:00:00 |loss 19.3379 |hm_loss 1.9807 |wh_loss 3.1003 |off_loss 0.2471 |id_loss 11.1124 |Data 0.003s(0.004s) |Net 0.704s
+mot/bdd100k_mit_b0| train: [1][3600/34172]|Tot: 0:42:15 |ETA: 0:00:00 |loss 19.2092 |hm_loss 1.9709 |wh_loss 3.0762 |off_loss 0.2469 |id_loss 11.0982 |Data 0.003s(0.003s) |Net 0.704s
+mot/bdd100k_mit_b0| train: [1][3700/34172]|Tot: 0:43:24 |ETA: 0:00:00 |loss 19.0842 |hm_loss 1.9622 |wh_loss 3.0546 |off_loss 0.2467 |id_loss 11.0831 |Data 0.003s(0.003s) |Net 0.704s
+mot/bdd100k_mit_b0| train: [1][3800/34172]|Tot: 0:44:33 |ETA: 0:00:00 |loss 18.9639 |hm_loss 1.9546 |wh_loss 3.0344 |off_loss 0.2465 |id_loss 11.0689 |Data 0.003s(0.003s) |Net 0.703s
+mot/bdd100k_mit_b0| train: [1][3900/34172]|Tot: 0:45:42 |ETA: 0:00:00 |loss 18.8417 |hm_loss 1.9458 |wh_loss 3.0130 |off_loss 0.2464 |id_loss 11.0546 |Data 0.003s(0.003s) |Net 0.703s
+mot/bdd100k_mit_b0| train: [1][4000/34172]|Tot: 0:46:51 |ETA: 0:00:00 |loss 18.7227 |hm_loss 1.9376 |wh_loss 2.9938 |off_loss 0.2464 |id_loss 11.0405 |Data 0.003s(0.003s) |Net 0.703s
+mot/bdd100k_mit_b0| train: [1][4100/34172]|Tot: 0:48:00 |ETA: 0:00:00 |loss 18.6066 |hm_loss 1.9301 |wh_loss 2.9735 |off_loss 0.2463 |id_loss 11.0270 |Data 0.003s(0.003s) |Net 0.702s
+mot/bdd100k_mit_b0| train: [1][4200/34172]|Tot: 0:49:09 |ETA: 0:00:00 |loss 18.4905 |hm_loss 1.9226 |wh_loss 2.9534 |off_loss 0.2462 |id_loss 11.0125 |Data 0.003s(0.003s) |Net 0.702s
+mot/bdd100k_mit_b0| train: [1][4300/34172]|Tot: 0:50:18 |ETA: 0:00:00 |loss 18.3761 |hm_loss 1.9149 |wh_loss 2.9367 |off_loss 0.2461 |id_loss 10.9987 |Data 0.003s(0.003s) |Net 0.702s
+mot/bdd100k_mit_b0| train: [1][4400/34172]|Tot: 0:51:27 |ETA: 0:00:00 |loss 18.2648 |hm_loss 1.9075 |wh_loss 2.9179 |off_loss 0.2460 |id_loss 10.9866 |Data 0.003s(0.003s) |Net 0.701s
+mot/bdd100k_mit_b0| train: [1][4500/34172]|Tot: 0:52:36 |ETA: 0:00:00 |loss 18.1529 |hm_loss 1.9003 |wh_loss 2.8990 |off_loss 0.2459 |id_loss 10.9726 |Data 0.003s(0.003s) |Net 0.701s
+mot/bdd100k_mit_b0| train: [1][4600/34172]|Tot: 0:53:45 |ETA: 0:00:00 |loss 18.0424 |hm_loss 1.8933 |wh_loss 2.8807 |off_loss 0.2458 |id_loss 10.9583 |Data 0.003s(0.003s) |Net 0.701s
+mot/bdd100k_mit_b0| train: [1][4700/34172]|Tot: 0:54:54 |ETA: 0:00:00 |loss 17.9342 |hm_loss 1.8866 |wh_loss 2.8621 |off_loss 0.2456 |id_loss 10.9453 |Data 0.003s(0.003s) |Net 0.701s
+mot/bdd100k_mit_b0| train: [1][4800/34172]|Tot: 0:56:03 |ETA: 0:00:00 |loss 17.8258 |hm_loss 1.8794 |wh_loss 2.8436 |off_loss 0.2455 |id_loss 10.9320 |Data 0.003s(0.003s) |Net 0.701s
+mot/bdd100k_mit_b0| train: [1][4900/34172]|Tot: 0:57:12 |ETA: 0:00:00 |loss 17.7195 |hm_loss 1.8727 |wh_loss 2.8280 |off_loss 0.2454 |id_loss 10.9182 |Data 0.003s(0.003s) |Net 0.700s
+mot/bdd100k_mit_b0| train: [1][5000/34172]|Tot: 0:58:21 |ETA: 0:00:00 |loss 17.6144 |hm_loss 1.8662 |wh_loss 2.8112 |off_loss 0.2453 |id_loss 10.9045 |Data 0.003s(0.003s) |Net 0.700s
+mot/bdd100k_mit_b0| train: [1][5100/34172]|Tot: 0:59:30 |ETA: 0:00:00 |loss 17.5093 |hm_loss 1.8592 |wh_loss 2.7931 |off_loss 0.2452 |id_loss 10.8913 |Data 0.003s(0.003s) |Net 0.700s
+mot/bdd100k_mit_b0| train: [1][5200/34172]|Tot: 1:00:39 |ETA: 0:00:00 |loss 17.4054 |hm_loss 1.8526 |wh_loss 2.7761 |off_loss 0.2451 |id_loss 10.8776 |Data 0.003s(0.003s) |Net 0.700s
+mot/bdd100k_mit_b0| train: [1][5300/34172]|Tot: 1:01:48 |ETA: 0:00:00 |loss 17.3050 |hm_loss 1.8466 |wh_loss 2.7615 |off_loss 0.2451 |id_loss 10.8646 |Data 0.003s(0.003s) |Net 0.700s
+mot/bdd100k_mit_b0| train: [1][5400/34172]|Tot: 1:02:57 |ETA: 0:00:00 |loss 17.2067 |hm_loss 1.8407 |wh_loss 2.7479 |off_loss 0.2450 |id_loss 10.8527 |Data 0.003s(0.003s) |Net 0.699s
+mot/bdd100k_mit_b0| train: [1][5500/34172]|Tot: 1:04:06 |ETA: 0:00:00 |loss 17.1102 |hm_loss 1.8351 |wh_loss 2.7337 |off_loss 0.2449 |id_loss 10.8416 |Data 0.003s(0.003s) |Net 0.699s
+mot/bdd100k_mit_b0| train: [1][5600/34172]|Tot: 1:05:15 |ETA: 0:00:00 |loss 17.0132 |hm_loss 1.8296 |wh_loss 2.7203 |off_loss 0.2448 |id_loss 10.8285 |Data 0.003s(0.003s) |Net 0.699s
+mot/bdd100k_mit_b0| train: [1][5700/34172]|Tot: 1:06:24 |ETA: 0:00:00 |loss 16.9164 |hm_loss 1.8234 |wh_loss 2.7051 |off_loss 0.2447 |id_loss 10.8169 |Data 0.003s(0.003s) |Net 0.699s
+mot/bdd100k_mit_b0| train: [1][5800/34172]|Tot: 1:07:33 |ETA: 0:00:00 |loss 16.8205 |hm_loss 1.8175 |wh_loss 2.6913 |off_loss 0.2446 |id_loss 10.8042 |Data 0.003s(0.003s) |Net 0.699s
+mot/bdd100k_mit_b0| train: [1][5900/34172]|Tot: 1:08:42 |ETA: 0:00:00 |loss 16.7264 |hm_loss 1.8118 |wh_loss 2.6780 |off_loss 0.2445 |id_loss 10.7923 |Data 0.003s(0.003s) |Net 0.699s
+mot/bdd100k_mit_b0| train: [1][6000/34172]|Tot: 1:09:51 |ETA: 0:00:00 |loss 16.6358 |hm_loss 1.8068 |wh_loss 2.6658 |off_loss 0.2444 |id_loss 10.7818 |Data 0.003s(0.003s) |Net 0.698s
+mot/bdd100k_mit_b0| train: [1][6100/34172]|Tot: 1:11:00 |ETA: 0:00:00 |loss 16.5442 |hm_loss 1.8016 |wh_loss 2.6524 |off_loss 0.2443 |id_loss 10.7702 |Data 0.003s(0.003s) |Net 0.698s
+mot/bdd100k_mit_b0| train: [1][6200/34172]|Tot: 1:12:09 |ETA: 0:00:00 |loss 16.4531 |hm_loss 1.7960 |wh_loss 2.6386 |off_loss 0.2443 |id_loss 10.7591 |Data 0.003s(0.003s) |Net 0.698s
+mot/bdd100k_mit_b0| train: [1][6300/34172]|Tot: 1:13:18 |ETA: 0:00:00 |loss 16.3627 |hm_loss 1.7907 |wh_loss 2.6262 |off_loss 0.2442 |id_loss 10.7471 |Data 0.003s(0.003s) |Net 0.698s
+mot/bdd100k_mit_b0| train: [1][6400/34172]|Tot: 1:14:27 |ETA: 0:00:00 |loss 16.2732 |hm_loss 1.7854 |wh_loss 2.6138 |off_loss 0.2441 |id_loss 10.7354 |Data 0.003s(0.003s) |Net 0.698s
+mot/bdd100k_mit_b0| train: [1][6500/34172]|Tot: 1:15:36 |ETA: 0:00:00 |loss 16.1860 |hm_loss 1.7806 |wh_loss 2.6026 |off_loss 0.2440 |id_loss 10.7243 |Data 0.003s(0.003s) |Net 0.698s
+mot/bdd100k_mit_b0| train: [1][6600/34172]|Tot: 1:16:45 |ETA: 0:00:00 |loss 16.1000 |hm_loss 1.7759 |wh_loss 2.5915 |off_loss 0.2440 |id_loss 10.7134 |Data 0.003s(0.003s) |Net 0.698s
+mot/bdd100k_mit_b0| train: [1][6700/34172]|Tot: 1:17:54 |ETA: 0:00:00 |loss 16.0149 |hm_loss 1.7713 |wh_loss 2.5809 |off_loss 0.2439 |id_loss 10.7026 |Data 0.003s(0.003s) |Net 0.698s
+mot/bdd100k_mit_b0| train: [1][6800/34172]|Tot: 1:19:03 |ETA: 0:00:00 |loss 15.9302 |hm_loss 1.7668 |wh_loss 2.5697 |off_loss 0.2438 |id_loss 10.6916 |Data 0.003s(0.003s) |Net 0.698s
+mot/bdd100k_mit_b0| train: [1][6900/34172]|Tot: 1:20:12 |ETA: 0:00:00 |loss 15.8457 |hm_loss 1.7617 |wh_loss 2.5584 |off_loss 0.2437 |id_loss 10.6812 |Data 0.003s(0.003s) |Net 0.697s
+mot/bdd100k_mit_b0| train: [1][7000/34172]|Tot: 1:21:21 |ETA: 0:00:00 |loss 15.7625 |hm_loss 1.7574 |wh_loss 2.5479 |off_loss 0.2436 |id_loss 10.6697 |Data 0.003s(0.003s) |Net 0.697s
+mot/bdd100k_mit_b0| train: [1][7100/34172]|Tot: 1:22:30 |ETA: 0:00:00 |loss 15.6793 |hm_loss 1.7529 |wh_loss 2.5369 |off_loss 0.2436 |id_loss 10.6580 |Data 0.003s(0.003s) |Net 0.697s
+mot/bdd100k_mit_b0| train: [1][7200/34172]|Tot: 1:23:39 |ETA: 0:00:00 |loss 15.5979 |hm_loss 1.7483 |wh_loss 2.5267 |off_loss 0.2435 |id_loss 10.6479 |Data 0.003s(0.003s) |Net 0.697s
+mot/bdd100k_mit_b0| train: [1][7300/34172]|Tot: 1:24:49 |ETA: 0:00:00 |loss 15.5172 |hm_loss 1.7437 |wh_loss 2.5159 |off_loss 0.2434 |id_loss 10.6380 |Data 0.003s(0.003s) |Net 0.697s
+mot/bdd100k_mit_b0| train: [1][7400/34172]|Tot: 1:25:58 |ETA: 0:00:00 |loss 15.4368 |hm_loss 1.7390 |wh_loss 2.5056 |off_loss 0.2433 |id_loss 10.6277 |Data 0.003s(0.003s) |Net 0.697s
+mot/bdd100k_mit_b0| train: [1][7500/34172]|Tot: 1:27:07 |ETA: 0:00:00 |loss 15.3579 |hm_loss 1.7351 |wh_loss 2.4970 |off_loss 0.2432 |id_loss 10.6166 |Data 0.003s(0.003s) |Net 0.697s
+mot/bdd100k_mit_b0| train: [1][7600/34172]|Tot: 1:28:16 |ETA: 0:00:00 |loss 15.2794 |hm_loss 1.7309 |wh_loss 2.4866 |off_loss 0.2432 |id_loss 10.6063 |Data 0.003s(0.003s) |Net 0.697s
+mot/bdd100k_mit_b0| train: [1][7700/34172]|Tot: 1:29:25 |ETA: 0:00:00 |loss 15.2010 |hm_loss 1.7266 |wh_loss 2.4768 |off_loss 0.2431 |id_loss 10.5954 |Data 0.003s(0.003s) |Net 0.697s
+mot/bdd100k_mit_b0| train: [1][7800/34172]|Tot: 1:30:34 |ETA: 0:00:00 |loss 15.1235 |hm_loss 1.7226 |wh_loss 2.4685 |off_loss 0.2430 |id_loss 10.5839 |Data 0.003s(0.003s) |Net 0.697s
+mot/bdd100k_mit_b0| train: [1][7900/34172]|Tot: 1:31:43 |ETA: 0:00:00 |loss 15.0471 |hm_loss 1.7184 |wh_loss 2.4586 |off_loss 0.2429 |id_loss 10.5741 |Data 0.003s(0.003s) |Net 0.697s
+mot/bdd100k_mit_b0| train: [1][8000/34172]|Tot: 1:32:52 |ETA: 0:00:00 |loss 14.9716 |hm_loss 1.7144 |wh_loss 2.4499 |off_loss 0.2428 |id_loss 10.5639 |Data 0.003s(0.003s) |Net 0.696s
+mot/bdd100k_mit_b0| train: [1][8100/34172]|Tot: 1:34:01 |ETA: 0:00:00 |loss 14.8970 |hm_loss 1.7103 |wh_loss 2.4408 |off_loss 0.2427 |id_loss 10.5545 |Data 0.003s(0.003s) |Net 0.696s
+mot/bdd100k_mit_b0| train: [1][8200/34172]|Tot: 1:35:10 |ETA: 0:00:00 |loss 14.8224 |hm_loss 1.7062 |wh_loss 2.4321 |off_loss 0.2426 |id_loss 10.5444 |Data 0.003s(0.003s) |Net 0.696s
+mot/bdd100k_mit_b0| train: [1][8300/34172]|Tot: 1:36:19 |ETA: 0:00:00 |loss 14.7488 |hm_loss 1.7022 |wh_loss 2.4229 |off_loss 0.2425 |id_loss 10.5347 |Data 0.003s(0.003s) |Net 0.696s
+mot/bdd100k_mit_b0| train: [1][8400/34172]|Tot: 1:37:28 |ETA: 0:00:00 |loss 14.6756 |hm_loss 1.6984 |wh_loss 2.4134 |off_loss 0.2424 |id_loss 10.5244 |Data 0.003s(0.003s) |Net 0.696s
+mot/bdd100k_mit_b0| train: [1][8500/34172]|Tot: 1:38:37 |ETA: 0:00:00 |loss 14.6034 |hm_loss 1.6946 |wh_loss 2.4046 |off_loss 0.2423 |id_loss 10.5148 |Data 0.003s(0.003s) |Net 0.696s
+mot/bdd100k_mit_b0| train: [1][8600/34172]|Tot: 1:39:46 |ETA: 0:00:00 |loss 14.5323 |hm_loss 1.6909 |wh_loss 2.3972 |off_loss 0.2422 |id_loss 10.5053 |Data 0.003s(0.003s) |Net 0.696s
+mot/bdd100k_mit_b0| train: [1][8700/34172]|Tot: 1:40:55 |ETA: 0:00:00 |loss 14.4615 |hm_loss 1.6871 |wh_loss 2.3894 |off_loss 0.2422 |id_loss 10.4958 |Data 0.003s(0.003s) |Net 0.696s
