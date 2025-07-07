@@ -1,0 +1,10 @@
+.idea
+dataset/bdd100kmot_vehicle/
+outputs/
+*.pth
+exp/
+nohup_log/
+models/
+*.out
+id_rsa
+id_rsa.pub

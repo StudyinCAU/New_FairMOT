@@ -1,0 +1,12 @@
+{
+    "root": "/home/beihang/twd/report/New_FairMOT/dataset",
+    "train": {
+        "bdd100kmot_vehicle": "./data/bdd100kmot_vehicle.train"
+    },
+    "test_emb": {
+        "bdd100kmot_vehicle": "./data/bdd100kmot_vehicle.val"
+    },
+    "test": {
+        "bdd100kmot_vehicle": "./data/bdd100kmot_vehicle.val"
+    }
+}
